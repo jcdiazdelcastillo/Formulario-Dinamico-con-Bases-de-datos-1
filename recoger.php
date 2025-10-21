@@ -1,7 +1,7 @@
 <?php
     include "configdb.php";
     $conexion = new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
-
+    
     // COMPROBAR QUE LOS CAMPOS SE HAYAN RELLENADO
     if(!isset($_POST['terminos'])){
         echo 'formulario no enviado, términos no aceptados';
