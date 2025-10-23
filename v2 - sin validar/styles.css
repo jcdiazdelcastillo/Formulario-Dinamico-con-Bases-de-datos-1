@@ -1,0 +1,162 @@
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    width:1512.800px;
+}
+
+/* Header y navegación */
+header, footer {
+    background-color: #2E8B57;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 1472.800px;
+}
+nav{
+    margin: 0 15px;
+    font-weight: bold;
+}
+a{
+    margin-left: 10px;
+    color:purple;
+}
+a:hover{
+    color:white;
+}
+main {
+    padding: 20px;
+    text-align: center;
+    width:1472.800px; /*1512.800-40*/
+
+}
+
+#estilotituloform{
+    color: #2E8B57;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    width: 500px; /*TOTAL: 500px WIDTH + 466 MARGIN LEFT + 466 MARGIN RIGHT = 1472PX. TAMAÑO DEL MAIN*/
+    margin-left:466.400px;
+    margin-right:466.400px; /*centrar el formulario*/
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*para darle relieve*/
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /*transformar los label en elementos de bloque y que se pueda poner el label arriba y el input abajo*/
+    font-weight: bold;
+}
+
+input[type="text"], /* de esta forma se coge y se le aplica el css a todos los input*/
+input[type="email"],
+input[type="number"],
+select {
+    padding: 8px;
+    border-radius: 5px;
+    width:400px;
+    margin:30px;
+}
+
+.radio-individual {
+  
+    background-color: #e0f7fa;
+    border: 1px solid#00bcd4;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+  
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    text-align: center;
+    color:#2E8B57;
+}
+
+/*PAGINA INDEX-HTML*/
+main h2 {
+    color: #2E8B57;
+    margin-bottom: 20px;
+    margin-top:50px;
+}
+
+.cajaPrincipal{
+    padding:20px;
+    padding-left:50px;
+    text-align:left;
+    width:1442.800px; /*1512,8 -50 -20*/
+}
+
+.estilosParrafos{
+    width: 1400.800px;
+    text-align:justify;
+    font-size: 17px;
+}
+
+table{
+    width: 1400.800px; /*section de 1442.800*/
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: #2E8B57;
+    color:white;
+}
+
+ul{
+    width:1382.800; /*1442.800 del section -60px margin*/
+    margin: 30px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/*MECANISMOS DE IMPACTO (3 cajas lado a lado)*/
+.mecanismoIndividual{
+    float:left;
+    width: 436.800px; /*1442.800 ENTRE 3 CAJAS 480 - 20 MARGIN LEFT -20 padding - 4 border = 436  SE BAJA LA ULTIMA PREGUNTAR A ISA*/ 
+    margin-top: 20px;
+    margin-left:20px;
+    margin-bottom:20px;
+    padding:10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color:#68b0b9;
+}
+
+#eliminarFloat{
+    clear:both;
+}
+/*SOLUCIONES GENERAL, UNA CAJA DEBAJO DE OTRA*/
+.solucionIndividual{
+    width: 470px;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #e0f7fa;
+}
+.solucionIndividual img {
+    width: 450px; /* un poco menos que el ancho de la caja (470 PX) para dejar margen */
+    height: auto; /* que no se achine */
+    margin: 0 auto 10px auto; /* centra la imagen y dejaR espacio abajo */
+}
