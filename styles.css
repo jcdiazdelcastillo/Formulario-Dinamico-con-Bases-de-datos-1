@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo general del body */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+/* Encabezados dentro del form */
+form h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 18px;
+}
+
+/* Labels de inputs de texto, email y select */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #red;
+    font-weight: bold;
+    font-size: 14px;
+	margin:0 20px;
+}
+
+/* Inputs de texto, email, teléfono y select */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Checkboxes y radios en línea con el label */
+.checkbox-group label,
+.radio-group label {
+    display: inline-block; /* Mantiene input y texto en la misma línea */
+    margin-right: 20px;    /* Espacio entre cada opción */
+    font-size: 14px;
+    vertical-align: middle; /* Alinea verticalmente con el input */
+}
+
+/* Ajuste tamaño de checkbox y radio */
+.checkbox-group input[type="checkbox"],
+.radio-group input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle; /* Para alinear con el texto del label */
+}
+
+/* Botón de enviar */
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+	display:block;
+	margin:auto;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Grupos de checkboxes o radios */
+.checkbox-group,
+.radio-group {
+    margin-bottom: 15px;
+}
